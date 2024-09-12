@@ -1,0 +1,21 @@
+﻿@page
+@model RazorContactManagement.Pages.ViewContactModel
+@{
+}
+<div class="row">
+@foreach (var item in Model.li)
+{
+        <div class="col-md-4">
+
+    <img src=@item.Uimage height="100px" />
+    <div>@item.Contactid</div>
+    <div>@item.Firstname</div>
+    <div>@item.Mobileno</div>
+    <div>@item.Email</div>
+            <div><a class="btn btn-warning" asp-route-cid=@item.Contactid asp-page="Deletecontact">Delete</a><a class="btn btn-success" asp-route-fid=@item.Contactid  asp-page="Editcontact">Edit</a></div>
+        </div>
+     
+}
+</div>
+
+

@@ -1,0 +1,17 @@
+﻿@page
+@model RazorContactManagement.Pages.EditContactModel
+@{
+}
+<form>
+    <div style="width:500px;margin-left:300px">
+        <input type="text" name="Contactid"value="@Model.c.Contactid" class="form-control" />
+        <input type="text" name="Firstname" value="@Model.c.Firstname" class="form-control" />
+        <input type="text" name="Lastname" value="@Model.c.Lastname" class="form-control" />
+        <input type="text" name="Mobileno" value="@Model.c.Mobileno" class="form-control" />
+        <input type="text" name="Email" value="@Model.c.Email" class="form-control" />
+        <input type="text" name="Uimage" value="@Model.c.Uimage" class="form-control" />
+        <input type="submit" value="update Contacts" class="btn btn-success" />
+    </div>
+</form>
+<div style="background-color:steelblue color:azure">@Model.result</div>
+
